@@ -13,4 +13,9 @@ describe('InputDate', () =>{
     const testDate = new InputDate(30,8,2010);
     expect(testDate.getDay()).toEqual(1);
   });
+
+  test('should return a day of the week for a given date', () =>{
+    const testDate = new InputDate(30,8,2010);
+    expect(testDate.getDay()).toEqual('Monday');
+  });
 });
