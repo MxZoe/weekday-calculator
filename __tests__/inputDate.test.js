@@ -8,4 +8,9 @@ describe('InputDate', () =>{
     expect(testDate.month).toEqual(1);
     expect(testDate.year).toEqual(1900);
   });
+
+  test('should return a number, 0-6, for a given date', () =>{
+    const testDate = new InputDate(30,8,2010);
+    expect(testDate.getDay()).toEqual(1);
+  });
 });
